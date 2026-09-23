@@ -10,8 +10,7 @@ import feedparser
 from datetime import datetime, timedelta
 
 # Importar el mapa modular desde la carpeta cartografia
-from cartografia.mapa_vial import generar_mapa_carreteras
-
+from mapa_vial import generar_mapa_carreteras
 # 1. CONFIGURACIÓN DE PÁGINA
 st.set_page_config(
     page_title="OARL | Observatorio de Alerta y Riesgo Logístico e Independiente",
