@@ -2,12 +2,11 @@ import folium
 import streamlit.components.v1 as components
 
 def generar_mapa_carreteras(db_nodos):
-    # Usamos CartoDB Positron / Voyager para tener un fondo limpio pero con todas las etiquetas de carreteras, ciudades y países visibles
+    # Usamos OpenStreetMap para evitar restricciones de API Key y tener un fondo libre
     m = folium.Map(
         location=[-16.2902, -63.5887], 
         zoom_start=6, 
-        tiles="CartoDB Positron",
-        attr="CartoDB"
+        tiles="OpenStreetMap"
     )
     
     # Forzar límites estrictos sobre el territorio boliviano
