@@ -1,0 +1,6 @@
+streamlit
+pandas
+numpy
+feedparser
+streamlit-folium
+folium

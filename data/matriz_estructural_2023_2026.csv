@@ -1,0 +1,5 @@
+ID_Nodo,Corredor,Tramo,Frecuencia_Historica_Anual,Tipo_Riesgo_Recurrente,Impacto_Comercial,Dias_Interrupcion_Promedio,Latitud,Longitud
+NOD-01,Eje Central (Cochabamba - Santa Cruz),Parotani (Km 39),12,Conflictos Sociales / Bloqueos,Crítico,4.5,-17.6534,-66.3812
+NOD-02,Eje Occidental (La Paz - Tambo Quemado),Patacamaya - Sica Sica,8,Paro Gremial / Aduanero,Alto,2.8,-17.2345,-67.8321
+NOD-03,Corredor Sur (Potosí - Villazón),El Portillo - Cruce Tojo,5,Vulnerabilidad Geológica / Desastre,Medio,3.0,-21.5355,-65.7531
+NOD-04,Eje Oriental (Santa Cruz - Puerto Suárez),Pailón - San José de Chiquitos,6,Restricción Logística / Exportación,Alto,2.0,-17.6652,-62.3781

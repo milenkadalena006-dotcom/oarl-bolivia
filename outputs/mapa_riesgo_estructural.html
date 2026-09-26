@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_414167ac315c4b2ee1cc2f0282b06d16 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_414167ac315c4b2ee1cc2f0282b06d16" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_414167ac315c4b2ee1cc2f0282b06d16 = L.map(
+                "map_414167ac315c4b2ee1cc2f0282b06d16",
+                {
+                    center: [-16.2902, -63.5887],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_388f0a9dd783ce7aef8891bc2473566e = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri, DeLorme, NAVTEQ, USGS",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_388f0a9dd783ce7aef8891bc2473566e.addTo(map_414167ac315c4b2ee1cc2f0282b06d16);
+        
+    
+            var circle_marker_acbb38066097c6afa5ef4755fac4b04c = L.circleMarker(
+                [-17.6534, -66.3812],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_414167ac315c4b2ee1cc2f0282b06d16);
+        
+    
+        var popup_9b79caa97c85d980f87012317f4ab1e9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_33841e2531ae59e24dfca93f1c3ea393 = $(`<div id="html_33841e2531ae59e24dfca93f1c3ea393" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 220px;">             <h4 style="margin: 0; color: #b52a2a;">Eje Central (Cochabamba - Santa Cruz)</h4>             <p style="margin: 4px 0;"><b>Tramo:</b> Parotani (Km 39)</p>             <p style="margin: 4px 0;"><b>Riesgo:</b> Conflictos Sociales / Bloqueos</p>             <p style="margin: 4px 0;"><b>Frecuencia:</b> 12 eventos/año</p>             <p style="margin: 4px 0;"><b>Criticidad:</b> Crítico</p>         </div>         </div>`)[0];
+                popup_9b79caa97c85d980f87012317f4ab1e9.setContent(html_33841e2531ae59e24dfca93f1c3ea393);
+            
+        
+
+        circle_marker_acbb38066097c6afa5ef4755fac4b04c.bindPopup(popup_9b79caa97c85d980f87012317f4ab1e9)
+        ;
+
+        
+    
+    
+            circle_marker_acbb38066097c6afa5ef4755fac4b04c.bindTooltip(
+                `<div>
+                     Parotani (Km 39) (Crítico)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6e1072ec46012fb2fa997c7089943b27 = L.circleMarker(
+                [-17.2345, -67.8321],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_414167ac315c4b2ee1cc2f0282b06d16);
+        
+    
+        var popup_6f881bf8762f942049c9c9d38320fdaf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_961451d84f276f543357cc4083831a5e = $(`<div id="html_961451d84f276f543357cc4083831a5e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 220px;">             <h4 style="margin: 0; color: #b52a2a;">Eje Occidental (La Paz - Tambo Quemado)</h4>             <p style="margin: 4px 0;"><b>Tramo:</b> Patacamaya - Sica Sica</p>             <p style="margin: 4px 0;"><b>Riesgo:</b> Paro Gremial / Aduanero</p>             <p style="margin: 4px 0;"><b>Frecuencia:</b> 8 eventos/año</p>             <p style="margin: 4px 0;"><b>Criticidad:</b> Alto</p>         </div>         </div>`)[0];
+                popup_6f881bf8762f942049c9c9d38320fdaf.setContent(html_961451d84f276f543357cc4083831a5e);
+            
+        
+
+        circle_marker_6e1072ec46012fb2fa997c7089943b27.bindPopup(popup_6f881bf8762f942049c9c9d38320fdaf)
+        ;
+
+        
+    
+    
+            circle_marker_6e1072ec46012fb2fa997c7089943b27.bindTooltip(
+                `<div>
+                     Patacamaya - Sica Sica (Alto)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_49d86d01efa2a4b627edc5b28578cb38 = L.circleMarker(
+                [-21.5355, -65.7531],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_414167ac315c4b2ee1cc2f0282b06d16);
+        
+    
+        var popup_45223f4608dce3acaa96106da3329696 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5ae8e9568f0e4d69256921b274be8d67 = $(`<div id="html_5ae8e9568f0e4d69256921b274be8d67" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 220px;">             <h4 style="margin: 0; color: #b52a2a;">Corredor Sur (Potosí - Villazón)</h4>             <p style="margin: 4px 0;"><b>Tramo:</b> El Portillo - Cruce Tojo</p>             <p style="margin: 4px 0;"><b>Riesgo:</b> Vulnerabilidad Geológica / Desastre</p>             <p style="margin: 4px 0;"><b>Frecuencia:</b> 5 eventos/año</p>             <p style="margin: 4px 0;"><b>Criticidad:</b> Medio</p>         </div>         </div>`)[0];
+                popup_45223f4608dce3acaa96106da3329696.setContent(html_5ae8e9568f0e4d69256921b274be8d67);
+            
+        
+
+        circle_marker_49d86d01efa2a4b627edc5b28578cb38.bindPopup(popup_45223f4608dce3acaa96106da3329696)
+        ;
+
+        
+    
+    
+            circle_marker_49d86d01efa2a4b627edc5b28578cb38.bindTooltip(
+                `<div>
+                     El Portillo - Cruce Tojo (Medio)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3102ddbaf1405bf48593e30beb00813 = L.circleMarker(
+                [-17.6652, -62.3781],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_414167ac315c4b2ee1cc2f0282b06d16);
+        
+    
+        var popup_de504f0772781bb8c13d4754a4e5a8a5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a871e69f9cc20eace1ee3de5d03632af = $(`<div id="html_a871e69f9cc20eace1ee3de5d03632af" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 220px;">             <h4 style="margin: 0; color: #b52a2a;">Eje Oriental (Santa Cruz - Puerto Suárez)</h4>             <p style="margin: 4px 0;"><b>Tramo:</b> Pailón - San José de Chiquitos</p>             <p style="margin: 4px 0;"><b>Riesgo:</b> Restricción Logística / Exportación</p>             <p style="margin: 4px 0;"><b>Frecuencia:</b> 6 eventos/año</p>             <p style="margin: 4px 0;"><b>Criticidad:</b> Alto</p>         </div>         </div>`)[0];
+                popup_de504f0772781bb8c13d4754a4e5a8a5.setContent(html_a871e69f9cc20eace1ee3de5d03632af);
+            
+        
+
+        circle_marker_f3102ddbaf1405bf48593e30beb00813.bindPopup(popup_de504f0772781bb8c13d4754a4e5a8a5)
+        ;
+
+        
+    
+    
+            circle_marker_f3102ddbaf1405bf48593e30beb00813.bindTooltip(
+                `<div>
+                     Pailón - San José de Chiquitos (Alto)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
